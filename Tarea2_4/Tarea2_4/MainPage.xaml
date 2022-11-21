@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
+            BackgroundImageSource="fondo.jpg"
+             x:Class="Ejercicio2_4PMO2.MainPage">
+
+    <StackLayout BackgroundColor="#44348c" >
+
+        <Frame BackgroundColor=" #c4abe6 " HeightRequest="40">
+            <Label Text="Tarea2.4 Grabar Video" TextColor=" #661647 " FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center"/>
+
+        </Frame>
+
+        <Button x:Name="btngrabar" TextColor=" #c4abe6 " Text="Grabar Video" Margin="30,20,30,10" CornerRadius="10" Font="Arial" BackgroundColor="#520d33  "
+                FontAttributes="Bold" FontSize="15"  Padding="20"  Clicked="btngrabar_Clicked"/>
+        <mm:VideoView x:Name="videoV" HeightRequest="250" WidthRequest="100" BackgroundColor="  #c4ccdc " IsFullWindow="False" ShowControls="True" Margin="0,0,0,0" />
+
+       
+
+        <Button x:Name="btnsalvar"  Text="Enviar a SQLite" Margin="30,20,30,0" CornerRadius="15" Font="Arial" BackgroundColor="   #661647  "
+            FontAttributes="Bold" TextColor="#c4abe6 " FontSize="15"  Padding="16"  Clicked="btnsalvar_Clicked"/>
+        
+        <Button x:Name="btnlista"  Text="Listado de Videos" Margin="30,20,30,0" CornerRadius="10" Font="Arial" BackgroundColor="  #661647  "
+                FontAttributes="Bold"  TextColor=" #c4abe6 " FontSize="15"  Padding="16"  Clicked="btnlista_Clicked"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>
